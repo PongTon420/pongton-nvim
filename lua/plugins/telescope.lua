@@ -10,5 +10,16 @@ return {
                 vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
                 vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
                 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
+<<<<<<< HEAD
+=======
+                require('telescope').setup{
+                        pickers = {
+                                find_files = {
+                                        hidden = true,
+                                        find_command = { "rg", "--files", "--hidden", "--glob=!**/.git/*" }
+                                }
+                        }
+                }
+>>>>>>> 074868e (update telescope.lua)
         end
 }
