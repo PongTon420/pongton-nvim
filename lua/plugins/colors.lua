@@ -16,6 +16,7 @@ return {
                         vim.api.nvim_set_hl(0, 'LineNrAbove', { fg='#9f33a1', bold=true })
                         vim.api.nvim_set_hl(0, 'CursorLineNr', { fg='#fb9ef7', bold=true })
                         vim.api.nvim_set_hl(0, 'LineNrBelow', { fg='#9f33a1', bold=true })
+                        vim.api.nvim_set_hl(0, 'Comment', { fg ='#ffb7c5', italic=true })
                 end
         },
         {
