@@ -11,6 +11,7 @@ return {
                                 "tsx",
                                 "typescript",
                                 "java",
+                                "netrw",
                         },
                         auto_install = false,
                 })
