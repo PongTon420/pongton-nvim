@@ -9,7 +9,7 @@ return {
     config = function()
       require("mason").setup({ ui = { border = "rounded" } })
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "ts_ls", "pyright" }, 
+        ensure_installed = { "lua_ls", "ts_ls", "pyright", "clangd" }, 
       })
 
       local capabilities = require('blink.cmp').get_lsp_capabilities()
@@ -17,7 +17,7 @@ return {
         capabilities.workspace.didChangeWatchedFiles = { dynamicRegistration = false }
       end
 
-      local servers = { "lua_ls", "ts_ls", "pyright" }
+      local servers = { "lua_ls", "ts_ls", "pyright", "clangd" }
       for _, server in ipairs(servers) do
         if vim.lsp.config then
           vim.lsp.config(server, { capabilities = capabilities })

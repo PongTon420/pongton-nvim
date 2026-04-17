@@ -12,6 +12,7 @@ return {
                                 "typescript",
                                 "java",
                                 "netrw",
+                                "c",
                         },
                         auto_install = false,
                 })
